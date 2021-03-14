@@ -7,7 +7,7 @@ user = []
 def play():
 	print("\n==========KNOWLEDGE COMPETITION START==========")
 	score = 0
-	with open("assets/questions.json", 'r+') as f:
+	with open("questions.json", 'r+') as f:
 		j = json.load(f)
 		for i in range(10):
 			no_of_questions = len(j)
