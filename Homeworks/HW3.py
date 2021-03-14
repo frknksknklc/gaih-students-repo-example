@@ -1,5 +1,25 @@
-#Explain your work
+print("5 öğrencinin midterm, proje ve final notlarını giriniz:")
+print("1. Öğrenci")
+def note():
+    midterm = int(input("Midterm:"))
+    project = int(input("Project:"))
+    final = int(input("Final:"))
+    passingGrade = (midterm * 0.3)+ (project*0.3)+ (final*0.4)
+    print("Geçme Notu: ",passingGrade)
+    return (passingGrade)
 
-#Question 1
-for x in range(a):
-	print(a)
+my_dict = {"student1":[],"student2":[],"student3":[],"student4":[],"student5":[]}
+my_dict["student1"].append(note())
+print("2. öğrenci:")
+my_dict["student2"].append(note())
+print("3. öğrenci:")
+my_dict["student3"].append(note())
+print("4. öğrenci:")
+my_dict["student4"].append(note())
+print("5. öğrenci:")
+my_dict["student5"].append(note())
+print(my_dict)
+list = list(my_dict.values())
+print(list)
+list.sort()
+print(list)
